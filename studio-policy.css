@@ -1,0 +1,13 @@
+:root { --bg: #fffaf0; --fg: #2b2620; --muted: #6b6155; --accent: #b8701a; --rule: #eadfcd; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1d1a17; --fg: #f1e9dc; --muted: #b3a796; --accent: #f2b54a; --rule: #3a332b; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px max(20px, env(safe-area-inset-left, 0px)) 64px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin: 36px 0 8px; padding-top: 16px; border-top: 1px solid var(--rule); }
+h3 { font-size: 1.05rem; margin: 20px 0 4px; }
+a { color: var(--accent); }
+.meta, .crumb, .links, footer { color: var(--muted); font-size: 0.9rem; }
+.lead { font-size: 1.15rem; color: var(--muted); }
+.mail { user-select: all; }
+footer { margin-top: 48px; border-top: 1px solid var(--rule); padding-top: 16px; }
